@@ -21,6 +21,7 @@ body{
   border-radius: 35px;
   margin-top: 20px;
   position: static;
+  animation: navbar ease-in-out 0.5s;
   
   z-index: 100;
 }
@@ -110,31 +111,12 @@ body{
 }
 
 .base-card{
-  --bs-card-spacer-y: 1rem;
-  --bs-card-spacer-x: 1rem;
-  --bs-card-title-spacer-y: 0.5rem;
-  --bs-card-border-width: 0;
-  --bs-card-border-color: rgba(0,0,0,.125);
-  --bs-card-border-radius: 1rem;
-  --bs-card-box-shadow: 0 20px 27px 0 rgba(0,0,0,.05);
-  --bs-card-inner-border-radius: 1rem;
-  --bs-card-cap-padding-y: 0.5rem;
-  --bs-card-cap-padding-x: 1rem;
-  --bs-card-cap-bg: #fff;
-  --bs-card-bg: #fff;
-  --bs-card-img-overlay-padding: 1rem;
-  --bs-card-group-margin: 0.75rem;
   box-shadow:  0 20px 27px 0 rgba(0,0,0,.05);
   position: relative;
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  height: var(--bs-card-height);
   word-wrap: break-word;
-  background-color: var(--bs-card-bg);
+  background-color: white;
   background-clip: border-box;
-  border: var(--bs-card-border-width) solid var(--bs-card-border-color);
-  border-radius: var(--bs-card-border-radius);
+  border-radius: 1rem;
 }
 img{
   border-radius: 1rem;
@@ -177,9 +159,35 @@ img{
 .item:hover{
   transform: scale(1.05);
 }
+.animatied{
+  animation: comming linear 0.5s;
+}
 @keyframes hidden-content {
   0%{
     opacity: 0;
+  }
+  50%{
+    opacity: 0;
+  }
+}
+@keyframes navbar{
+  0%{
+    width: 70px;
+    position: absolute;
+    left: 15%;
+  }
+  100%{
+    position: absolute;
+    left: 15%;
+  }
+}
+
+@keyframes comming{
+  0%{
+    transform: scale(0.1);
+  }
+  79%{
+    transform: scale(1.1);
   }
 }
 
