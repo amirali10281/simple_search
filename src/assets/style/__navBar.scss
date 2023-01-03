@@ -1,0 +1,120 @@
+.nav {
+    background-color: var(--navColor);
+    min-height: 6vh;
+    position: relative;
+    z-index: 100;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 59px;
+    color: var(--textColor);
+
+}
+
+.nav div {
+    cursor: pointer;
+}
+
+// .nav-login-key {
+//     position: absolute;
+//     left: 10px;
+//     margin-left: 10px;
+//     border-radius: var(--radius);
+//     background-color: var(--navLoginKey);
+// }
+
+@media (min-width: 600px) {
+    .nav-call-key {
+        border: 2px solid var(--navLoginKey);
+        border-radius: var(--radius);
+        display: block !important;
+        padding: 6px;
+        left: 10px;
+        position: absolute;
+        left: 103px;
+        font-size: 10px;
+    }
+
+    .nav-call-key-drop-down {
+        display: none;
+    }
+}
+
+@media (min-width: 500px) {
+    .nav-login-key {
+        position: absolute;
+        left: 10px;
+        margin-left: 10px;
+        font-size: 10px;
+        border-radius: var(--radius);
+        background-color: var(--navLoginKey);
+    }
+
+    .nav-login-key-drop-down {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .nav-login-key {
+        display: none;
+    }
+
+    .nav-login-key-drop-down {
+        display: block;
+
+    }
+}
+
+@media (max-width: 600px) {
+    .nav-call-key {
+        display: none;
+    }
+
+    .nav-call-key-drop-down {
+        display: block;
+    }
+}
+
+.nav-brand {
+    position: absolute;
+    right: 80px;
+}
+
+.drop-down-menu {
+    position: absolute;
+    min-width: 200px;
+    background-color: var(--card);
+    padding: 10px;
+    right: 0px;
+    top: 60px;
+    border-radius: var(--radius);
+    border: 1px solid var(--borderColor);
+    color: var(--textColor);
+    cursor: pointer;
+    margin-top: 5px;
+    overflow: hidden;
+    animation: deop-down-menu-animation 1.5s none;
+}
+
+
+@keyframes deop-down-menu-animation {
+    0% {
+        padding-bottom: 5px;
+        // height: 10px;
+        opacity: 0;
+    }
+
+    30% {
+        padding-bottom: 90px;
+        height: fit-content;
+        opacity: 1;
+        box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.3);
+    }
+
+    100% {
+        padding: 10px;
+    }
+
+}

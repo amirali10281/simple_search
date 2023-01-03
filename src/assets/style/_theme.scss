@@ -1,0 +1,52 @@
+:root {
+    &.light {
+        --primary: rgb(255, 255, 255);
+        --back: #ffffff;
+        // --card: #ffb100;
+        --card: #f5f4f4;
+        --itemsFieldColor: #ffb1001a;
+        --searchField: #ffb100;
+        --borderColor: #bbb9b9;
+        --navColor: #ffffff;
+        --navLoginKey: rgb(147, 245, 147);
+        --shadow: gray;
+        --textColor: rgb(45, 45, 45);
+        --textColorTr: rgba(45, 45, 45, 0.3);
+        --inputColor: rgb(255, 255, 255);
+        --selected: #6d6e6f;
+        --textColorDarkBack: rgb(255, 255, 255);
+        --whuUs: rgb(0, 0, 0);
+        --baseItemColor: rgb(232, 232, 232);
+        --endPage: #333333;
+    }
+
+    &.dark {
+        --primary: rgb(0, 0, 0);
+        --back: #18191A;
+        --card: #272A2E;
+        --itemsFieldColor: #1b1b1b;
+        --searchField: #272A2E;
+        --borderColor: #43474c;
+        --navColor: #000000;
+        --navLoginKey: rgb(0, 74, 0);
+        --shadow: rgb(0, 0, 0);
+        --textColor: rgb(182, 182, 182);
+        --inputColor: #272A2E;
+        --selected: #6d6e6f;
+        --textColorDarkBack: rgb(255, 255, 255);
+        --whuUs: green;
+        --baseItemColor: rgb(232, 232, 232);
+        --endPage: #2c2c2c;
+    }
+}
+
+
+
+.primary-background {
+    background-color: var(--primary);
+
+}
+
+* {
+    transition: background linear 0.5s;
+}
