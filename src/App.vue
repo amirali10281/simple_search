@@ -13,7 +13,7 @@
       <div class="grid-container-overflow-y">
         <div v-for="  element, index in elements" :key="index" class="grid-item"
           :class="{ 'scroll-snap': index % 3 == 0 }">
-          <item :item="element" class="animatied" />
+          <item :item="element" class="animated" />
         </div>
       </div>
     </div>
